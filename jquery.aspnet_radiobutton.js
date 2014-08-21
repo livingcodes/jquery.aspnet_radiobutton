@@ -1,17 +1,3 @@
-/*
- USAGE:
- $(':radio').aspnet_radiobutton()
- ISSUE:
- when an asp.net radiobutton is in a repeater
- then the name attribute is generated (i.e. different for each radio)
- so all of the radio buttons can be checked.
- FACT:
- when an asp.net radiobutton name attribute is equal to the generated name and the radio is checked
- then in the code-behind the radiobutton Checked property will be true
- SOLUTION:
- 1. set name attribute consistently so only one radio can be checked
- 2. when radio is checked then set only its name attribute to its generated name so it can be used in code-behind
-*/
 (function($) {
 $.fn.aspnet_radiobutton = function(group_name) {
     var $radios = this
