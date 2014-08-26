@@ -11,7 +11,7 @@ ISSUE
 =====
  When an asp.net RadioButton is in a Repeater
  then the name attribute is generated (i.e. different for each radio)
- so all of the radio buttons can be checked.
+ so all of the radio buttons can be checked at the same time.
 SOLUTION
 ========
  1. Set name attribute consistently so only one radio can be checked
